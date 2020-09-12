@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script >
+            function setIndex(){
+                document.form.inp.value = document.form.index.value
+            }
+        </script>
+    </head>
+  
+  <BODY onload="changeBackground('red');">
+    <body>
+
+        <form action="" name="form">
+            <select id="index">
+                <option value="1">Index 1</option>
+                <option value="2">Index 2</option>
+                <option value="3">Index 3</option>
+                <option value="4">Index 4</option>
+                <option value="5">Index 5</option>    
+            </select>
+
+            <input type="text" name="inp">
+            <input type="button" name="click" value="Click here" onclick="setIndex()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <script>
+        function checkUser(){
+            if(document.form11.user.value=="" || document.form11.pass.value=="")
+                alert("Invalid information");
+            return false;
+        }
+    </script>
+</head>
+
+<body onLoad="document.form11.user.focus()">
+
+    <form name="form11" action="" method="">
+    
+        
+        <h2>Login</h2>
+        <table border="0">
+            <tr>
+                <td>User:</td>
+                <td><input type="text" name="user"></td>
+            </tr>
+            <tr>
+                <td>Pass:</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+        </Table>
+        <input type="submit" value="OK" onClick="checkUser()">
+        <input type="reset">
+        <input type="button" value=Cancel >
+    
+
+</form>
+</body>
+
+</html>

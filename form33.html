@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        function toUpper() {
+            var getText = form.inp.value  //nhan gia tri nhap vao 
+
+
+            var change = getText.split('').map(function (c) { return c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase() }).join('');
+            // split để tách các ký tự ra thành mảng ký tự, map tự động duyệt qua mảng các ký tự và thực thi 1 hàm trong đó, join giúp ghép các ký 
+            //tự lại với nhau thành 1 mảng và tham chiếu của nó là 1 ký tự phân tách giữa các ký tự cần nối, ở đây dùng '' vì không cần ký tự phân tách nào
+            form.result.value = change
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="form">
+        Type text: <input type="text" name="inp" onblur="toUpper()"> leave input field to convert
+        <input type="text" name="result">
+    </form>
+</body>
+
+</html>
